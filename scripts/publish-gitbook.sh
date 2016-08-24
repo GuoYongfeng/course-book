@@ -11,7 +11,7 @@ git init
 git add .
 git commit -m "Publish to GitBook"
 
-git remote add origin https://git.gitbook.com/zhaoda/webpack.git
+git remote add origin git@github.com:GuoYongfeng/course-book.git
 
 git push --force origin master:master
 
