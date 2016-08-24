@@ -1,10 +1,10 @@
 {
   "title": "金牌课程 -- 打造未来的前端架构师",
   "description": "金牌课程 -- 打造未来的前端架构师",
-  "language": "zh-cn",
+  "language": "zh-hans",
   "gitbook": "2.x.x",
   "plugins": [
-    "github",
+    "github"
   ],
   "pluginsConfig": {
     "github": {
