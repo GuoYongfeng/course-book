@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>教你使用赏心悦目的Atom编辑器 | 金牌课程 -- 打造未来的前端架构师</title>
+        <title>webpack支持ES6 | 金牌课程 -- 打造未来的前端架构师</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../1/nodejs安装和配置.html" />
+    <link rel="next" href="../2/在项目中支持使用React.html" />
     
     
-    <link rel="prev" href="../index.html" />
+    <link rel="prev" href="../2/webpack快速入门.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="1.1"
-        data-chapter-title="教你使用赏心悦目的Atom编辑器"
-        data-filepath="1/教你使用赏心悦目的Atom编辑器.md"
+        data-level="2.2"
+        data-chapter-title="webpack支持ES6"
+        data-filepath="2/webpack支持ES6.md"
         data-basepath=".."
         data-revision="Thu Aug 25 2016 16:02:01 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -90,7 +90,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1" data-path="1/教你使用赏心悦目的Atom编辑器.html">
+        <li class="chapter " data-level="1.1" data-path="1/教你使用赏心悦目的Atom编辑器.html">
             
                 
                     <a href="../1/教你使用赏心悦目的Atom编辑器.html">
@@ -208,7 +208,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="2/webpack支持ES6.html">
+        <li class="chapter active" data-level="2.2" data-path="2/webpack支持ES6.html">
             
                 
                     <a href="../2/webpack支持ES6.html">
@@ -527,7 +527,97 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x6559;&#x4F60;&#x4F7F;&#x7528;&#x8D4F;&#x5FC3;&#x60A6;&#x76EE;&#x7684;atom&#x7F16;&#x8F91;&#x5668;">&#x6559;&#x4F60;&#x4F7F;&#x7528;&#x8D4F;&#x5FC3;&#x60A6;&#x76EE;&#x7684;Atom&#x7F16;&#x8F91;&#x5668;</h1>
+                        <h1 id="webpack-&#x652F;&#x6301;es6">webpack &#x652F;&#x6301;ES6</h1>
+<h2 id="javascript&#x5305;&#x7BA1;&#x7406;&#x683C;&#x5F0F;">Javascript&#x5305;&#x7BA1;&#x7406;&#x683C;&#x5F0F;</h2>
+<p>Javascript&#x4E2D;&#x7684;&#x5305;&#x7BA1;&#x7406;&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<h4 id="commonjs">CommonJS</h4>
+<pre><code>//CommonJS &#x5B9A;&#x4E49;&#x7684;&#x662F;&#x6A21;&#x5757;&#x7684;&#x540C;&#x6B65;&#x52A0;&#x8F7D;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;NodeJS
+
+var MyModule = require(&apos;./MyModule&apos;);
+
+// export at module root
+module.exports = function() { ... };
+
+// alternatively, export individual functions
+exports.hello = function() {...};
+</code></pre><h4 id="amd">AMD</h4>
+<pre><code>//AMD &#x662F;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#xFF0C;&#x6BD4;&#x5982;require.js&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x89C4;&#x8303;
+define([&apos;./MyModule.js&apos;], function (MyModule) {
+  // export at module root
+  return function() {};
+});
+
+// or
+define([&apos;./MyModule.js&apos;], function (MyModule) {
+  // export as module function
+  return {
+    hello: function() {...}
+  };
+});
+</code></pre><h4 id="es6">ES6</h4>
+<pre><code>//ES6 &#x53D8;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x4E3B;&#x6D41;&#x4E86;
+
+import MyModule from &apos;./MyModule.js&apos;;
+
+// export at module root
+export default function () { ... };
+
+// or export as module function,
+// you can have multiple of these per module
+export function hello() {...};
+</code></pre><p>&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x683C;&#x5F0F;&#x5982;UMD&#x3001;CMD&#x7B49;&#xFF0C;&#x5728;&#x6B64;&#x4E0D;&#x518D;&#x4E00;&#x4E00;&#x4ECB;&#x7ECD;&#x3002;webpack&#x5BF9;&#x8FD9;&#x4E9B;&#x6A21;&#x5757;&#x683C;&#x5F0F;&#x90FD;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x7684;&#x652F;&#x6301;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x662F;CommonJS&#x683C;&#x5F0F;&#x7684;&#x6A21;&#x5757;&#x7BA1;&#x7406;&#xFF0C;&#x4F46;&#x662F;&#x968F;&#x7740;ES6&#x7684;&#x666E;&#x53CA;&#x548C;&#x5E94;&#x7528;&#xFF0C;&#x540C;&#x65F6;&#x5F97;&#x76CA;&#x4E8E;&#x5F3A;&#x5927;&#x7684;<a href="https://babeljs.io/" target="_blank">Babel</a>&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x4F7F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x4F7F;&#x7528;ES6&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x8003;&#x8651;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="webpack&#x652F;&#x6301;es6&#x8BED;&#x6CD5;">webpack&#x652F;&#x6301;ES6&#x8BED;&#x6CD5;</h2>
+<p>&#x5728;webpack&#x4E2D;&#x652F;&#x6301;ES6&#x540C;&#x6837;&#x53EA;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x76F8;&#x5E94;&#x7684;loader&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>npm install babel-loader babel-core babel-preset-es2015 babel-preset-react --save-dev
+</code></pre><p>&#x5728;<code>webpack.config.js</code>&#x4E2D;&#x6DFB;&#x52A0;loader&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>  {
+    test: /\.jsx?$/,
+    loader: &apos;babel&apos;,
+    exclude: /node_modules/,
+    query: {
+      presets: [&apos;react&apos;, &apos;es2015&apos;]
+    }
+  }
+</code></pre><p>&#x7531;&#x4E8E;&#x540E;&#x8FB9;&#x9700;&#x8981;&#x652F;&#x6301;React&#x7684;jsx&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x91CC;&#x5B89;&#x88C5;&#x4E86;<code>babel-preset-react</code>&#x3002;</p>
+<p>&#x987A;&#x4FBF;&#x63D0;&#x4E00;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>.babelrc</code>&#x6587;&#x4EF6;&#xFF0C;&#x5C06;loader&#x4E2D;&#x7684;<code>presets</code>&#x653E;&#x5728;&#x6587;&#x4EF6;<code>.babelrc</code>&#x4E2D;&#xFF1A;</p>
+<pre><code># .babelrc
+{
+  &quot;presets&quot;: [&quot;react&quot;, &quot;es2015&quot;]
+}
+</code></pre><p>&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x8FD0;&#x884C;<code>npm run build</code>&#xFF0C;&#x6B63;&#x5E38;&#x7F16;&#x8BD1;&#x540E;&#xFF0C;&#x4F7F;&#x7528;<code>npm run dev</code>&#xFF0C;&#x542F;&#x52A8;web&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6253;&#x5F00; <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x9875;&#x9762;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x663E;&#x793A;&#x4E86;&#x3002;</p>
+<h5 id="&#x8E29;&#x5751;&#x63D0;&#x9192;">&#x8E29;&#x5751;&#x63D0;&#x9192;</h5>
+<p>&#x5982;&#x679C;&#x4E0A;&#x9762;&#x5BF9;&#x4E8E;loader&#x7684;&#x914D;&#x7F6E;&#x5199;&#x4E3A;&#xFF08;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x662F;<code>loaders</code>&#x4E0D;&#x662F;<code>loader</code>&#xFF09;&#xFF1A;</p>
+<pre><code>{
+    test: /\.jsx?$/,
+    loaders: [&apos;babel&apos;],
+    exclude: /node_modules/,
+    query: {
+      presets: [&apos;es2015&apos;, &apos;react&apos;]
+    }
+}
+</code></pre><p>&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x8FD9;&#x6837;&#x7684;&#x9519;&#x8BEF;&#xFF1A;</p>
+<pre><code>$ npm run build
+
+&gt; react_boilerplate@1.0.0 build D:\node\react_boilerplate
+&gt; webpack
+
+D:\node\react_boilerplate\node_modules\webpack-core\lib\LoadersList.js:54
+                if(!element.loader || element.loader.indexOf(&quot;!&quot;) &gt;= 0) throw new Error(&quot;Cannot define &apos;query&apos; and multiple loaders in loaders list&quot;);
+                                                                        ^
+
+Error: Cannot define &apos;query&apos; and multiple loaders in loaders list
+    at getLoadersFromObject (D:\node\react_boilerplate\node_modules\webpack-core\lib\LoadersList.js:54:65)
+    at LoadersList. (D:\node\react_boilerplate\node_modules\webpack-core\lib\LoadersList.js:78:12)
+    at Array.map (native)
+    at LoadersList.match
+    ...
+</code></pre><p>&#x539F;&#x56E0;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x4E2A;<code>loader</code>&#xFF0C;&#x800C;<code>query</code>&#x4EC5;&#x4EC5;&#x4F5C;&#x7528;&#x4E8E;<code>babel-loader</code>&#x3002;&#x5982;&#x679C;&#x975E;&#x8981;&#x4F7F;&#x7528;<code>loaders</code>&#x52A0;&#x8F7D;&#x591A;&#x4E2A;<code>loader</code>&#xFF0C;&#x53EF;&#x4EE5;&#x505A;&#x5982;&#x4E0B;&#x4FEE;&#x6539;&#xFF1A;</p>
+<pre><code>var babelPresets = {presets: [&apos;react&apos;, &apos;es2015&apos;]};
+......
+loaders: [&apos;other-loader&apos;, &apos;babel-loader?&apos;+JSON.stringify(babelPresets)]
+......
+</code></pre><p>&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5728;<a href="https://github.com/jiji262/react_boilerplate/tree/master/_tutorial_/react_boilerplate_v2" target="_blank">react_boilerplate _v2</a>&#x4E2D;&#x67E5;&#x770B;&#x3002;</p>
 
                     
                     </section>
@@ -538,10 +628,10 @@
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: 介绍"><i class="fa fa-angle-left"></i></a>
+        <a href="../2/webpack快速入门.html" class="navigation navigation-prev " aria-label="Previous page: webpack快速入门"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../1/nodejs安装和配置.html" class="navigation navigation-next " aria-label="Next page: nodejs安装和配置"><i class="fa fa-angle-right"></i></a>
+        <a href="../2/在项目中支持使用React.html" class="navigation navigation-next " aria-label="Next page: 在项目中支持使用React"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

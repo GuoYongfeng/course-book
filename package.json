@@ -13,7 +13,7 @@
     "deploy-wiki": "./scripts/deploy-wiki.sh",
     "generate-and-deploy": "npm run generate-gitbook && npm run generate-wiki && npm run deploy-gitbook && npm run deploy-wiki",
     "publish-gitbook": "./scripts/publish-gitbook.sh",
-    "publish": "npm run generate-and-deploy && npm run publish-gitbook"
+    "publish": "npm run generate-deploy && npm run publish-gitbook"
   },
   "repository": {
     "type": "git",
