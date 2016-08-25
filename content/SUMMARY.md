@@ -13,6 +13,13 @@
   - [在项目中支持使用React](./2/在项目中支持使用React.md)
   - [测试环境搭建](./2/测试环境搭建.md)
   - [使用Karma测试](./2/使用Karma测试.md)
+- [Babel使用指南]()
+  - [介绍](./3/Babel使用指南.md)
+  - [安装 Babel](./3/安装 Babel.md)
+  - [配置 Babel](./3/配置 Babel.md)
+  - [执行 Babel 生成的代码](./3/执行 Babel 生成的代码.md)
+  - [配置 Babel（进阶）](./3/配置 Babel（进阶）.md)
+  - [Babel 和其他工具集成](./3/Babel 和其他工具集成.md )
 - [使用ES6开发属于你的前端类库]()
   - let & const 基本学习
   - arrow function
@@ -27,6 +34,17 @@
   - 功能测试
   - 持续集成
   - 发布到npm
+- [React核心基础详解]()
+  - [初识React](./5/React第一讲课堂笔记（初识React）.md)
+  - [JSX语法](./5/React第二讲课堂笔记（JSX语法）.md)
+  - [数据流](./5/React第三讲课堂笔记（数据流）.md)
+  - [定义组件](./5/React第四讲课堂笔记（定义组件）.md)
+  - [DOM操作](./5/React第五讲课堂笔记（DOM操作）.md)
+  - [DOM操作](./5/React第六讲课堂笔记（事件）.md)
+  - [组件嵌套](./5/React第七讲课堂笔记（组件嵌套）.md)
+  - [表单操作](./5/React第八讲课堂笔记（表单操作）.md)
+  - [mixin](./5/React第九讲课堂笔记（mixin）.md)
+  - [编码规范](./5/React课堂笔记第十讲（编码规范）.md)
 - [开发你的第一个React应用]()
   - 使用React.Component开发组件并完成渲染
   - this.props的使用
@@ -36,9 +54,31 @@
   - container 页面逻辑，使用neoui，调试功能
   - life cycle events and conditional rendering
   - axios, promises, and the github api
+- [React-router路由实战]()
+  - [内容简介](./7/内容简介.md)
+  - [Router,hashHistory,Route](./7/Router,hashHistory,Route.md)
+  - [Link.md](./7/Link.md)
+  - [browserHistory.md](./7/browserHistory.md)
+  - [activeStyle,activeClassName](./7/activeStyle,activeClassName.md)
+  - [路由嵌套](./7/路由嵌套.md)
+  - [IndexRoute](./7/IndexRoute.md)
+  - [路由变量](./7/路由变量.md)
+  - [Route中components参数的高级用法](./7/Route中components参数的高级用法.md)
+  - [使用query获取URL中的参数](./7/使用query获取URL中的参数.md)
+  - [Redirect重定向](./7/Redirect重定向.md )
+  - [setRouteLeaveHook路由钩子函数](./7/setRouteLeaveHook路由钩子函数.md)
+- [Redux从入门到实战]()
+- Node.js知识详解
+  - [介绍](./9/Node.js知识详解.md)
+  - [Node.js入门知识](./9/Node.js入门知识.md)
+  - [Node.js基础知识](./9/Node.js基础知识.md)
+  - [Nodejs中的对象和核心API](./9/Nodejs中的对象和核心API.md)
+  - [Node.js开发实战](./9/Node.js开发实战.md)
 - [基于 React + Nodejs 的前后端同构应用开发]()
-  - 应用功能规划
-  - 画出核心功能原型图
-  - 架构方案确定
-  - 搭建开发工作流
-  - 开发基础功能组件
+  - [你需要准备什么](./10/你需要准备什么.md)
+  - [应用功能分析](./10/应用功能分析.md)
+  - [技术基础架构](./10/技术基础架构.md)
+  - [开发服务端应用](./10/开发服务端应用.md)
+  - [开发客户端应用](./10/开发客户端应用.md)
+- [更多]()
+  - [组件测试](./11/组件测试.md)
