@@ -8,11 +8,11 @@
   - [Git的高级使用指导](./1/Git的高级使用指导.md)
   - [掌握基本shell命令](./1/掌握基本shell命令.md)
 - [手把手教你使用webpack搭建完整工作流]()
-  - webpack 介绍和内容说明
-  - 跑通基本功能
-  - webpack集成babel解析ES6语法和JSX语法
-  - 使用html-webpack-plugin解析html
-  - 集成npm scripts
+  - [webpack快速入门](./2/webpack快速入门.md)
+  - [webpack支持ES6](./2/webpack支持ES6.md)
+  - [在项目中支持使用React](./2/在项目中支持使用React.md)
+  - [测试环境搭建](./2/测试环境搭建.md)
+  - [使用Karma测试](./2/使用Karma测试.md)
 - [使用ES6开发属于你的前端类库]()
   - let & const 基本学习
   - arrow function
