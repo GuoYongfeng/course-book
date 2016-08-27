@@ -20,14 +20,25 @@
   - [执行 Babel 生成的代码](./3/执行 Babel 生成的代码.md)
   - [配置 Babel（进阶）](./3/配置 Babel（进阶）.md)
   - [Babel 和其他工具集成](./3/Babel 和其他工具集成.md )
+- [ES6 核心基础知识]()
+  - [introduction](./4/introduction.md)
+  - [tooling](./4/tooling.md)
+  - [let-and-const](./4/let-and-const.md)
+  - [teplate-literals](./4/teplate-literals.md)
+  - [arrow-funtions](./4/arrow-funtions.md)
+  - [assignment-destructuring](./4/assignment-destructuring.md)
+  - [object-literals](./4/object-literals.md)
+  - [spread-oprator-and-rest-parameters](./4/spread-oprator-and-rest-parameters.md)
+  - [classes](./4/classes.md)
+  - [modules](./4/modules.md)
+  - [decorators](./4/decorators.md)
+  - [generaters](./4/generaters.md)
+  - [promises](./4/promises.md)
+  - [proxies](./4/proxies.md)
+  - [sets-maps-and-weaksets-weakmaps](./4/sets-maps-and-weaksets-weakmaps.md)
+  - [symbols](./4/symbols.md)
+  - [iterators](./4/iterators.md)
 - [使用ES6开发属于你的前端类库]()
-  - let & const 基本学习
-  - arrow function
-  - 增强的对象字面量
-  - 模板字符串
-  - 解构赋值
-  - rest & spread
-  - import & export
   - 类库功能规划
   - 核心功能架构搭建
   - 完善基本功能
@@ -68,6 +79,16 @@
   - [Redirect重定向](./7/Redirect重定向.md )
   - [setRouteLeaveHook路由钩子函数](./7/setRouteLeaveHook路由钩子函数.md)
 - [Redux从入门到实战]()
+  - [内容介绍](./8/介绍.md)
+  - [快速上手](./8/快速上手.md)
+  - [Redux 的顶层 API 介绍](./8/Redux 的顶层 API 介绍.md)
+  - [理解 Redux 的核心概念](./8/理解 Redux 的核心概念.md)
+  - [React-redux的使用](./8/React-redux的使用.md)
+  - [一步步开发一个 TODO 应用](./8/一步步开发一个 TODO 应用.md)
+  - [Redux超酷的开发工具Redux-Devtools](./8/Redux超酷的开发工具Redux-Devtools.md)
+  - [初步理解Redux的Middleware](./8/初步理解Redux的Middleware.md)
+  - [一起来写middleware](./8/一起来写middleware.md)
+  - [middleware的综合应用实战](./8/middleware的应用.md)
 - Node.js知识详解
   - [介绍](./9/Node.js知识详解.md)
   - [Node.js入门知识](./9/Node.js入门知识.md)
@@ -82,3 +103,5 @@
   - [开发客户端应用](./10/开发客户端应用.md)
 - [更多]()
   - [组件测试](./11/组件测试.md)
+  - [react组件编码规范](./11/react组件编码规范.md)
+  - [JS函数式编程](./11/JS函数式编程.md)

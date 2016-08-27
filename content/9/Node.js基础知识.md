@@ -292,7 +292,7 @@ var foo = require('foo.js');
 
 require匹配文件的流程图例
 
-![](/img/require.jpg)
+![](../images/require.jpg)
 
 
 ## npm包管理器
