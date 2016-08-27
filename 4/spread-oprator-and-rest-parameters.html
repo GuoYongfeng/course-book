@@ -1,0 +1,1655 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>spread-oprator-and-rest-parameters | 金牌课程 -- 打造未来的前端架构师</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../4/classes.html" />
+    
+    
+    <link rel="prev" href="../4/object-literals.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.8"
+        data-chapter-title="spread-oprator-and-rest-parameters"
+        data-filepath="4/spread-oprator-and-rest-parameters.md"
+        data-basepath=".."
+        data-revision="Sat Aug 27 2016 14:21:37 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 掌握基础核心开发技能</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="1/教你使用赏心悦目的Atom编辑器.html">
+            
+                
+                    <a href="../1/教你使用赏心悦目的Atom编辑器.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        教你使用赏心悦目的Atom编辑器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1/nodejs安装和配置.html">
+            
+                
+                    <a href="../1/nodejs安装和配置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        nodejs安装和配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1/npm的配置和基本使用.html">
+            
+                
+                    <a href="../1/npm的配置和基本使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        npm的配置和基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1/Git和Github快速入门指南.html">
+            
+                
+                    <a href="../1/Git和Github快速入门指南.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Git和Github快速入门指南
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="1/Git的高级使用指导.html">
+            
+                
+                    <a href="../1/Git的高级使用指导.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Git的高级使用指导
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="1/掌握基本shell命令.html">
+            
+                
+                    <a href="../1/掌握基本shell命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        掌握基本shell命令
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 手把手教你使用webpack搭建完整工作流</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="2/webpack快速入门.html">
+            
+                
+                    <a href="../2/webpack快速入门.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        webpack快速入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="2/webpack支持ES6.html">
+            
+                
+                    <a href="../2/webpack支持ES6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        webpack支持ES6
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="2/在项目中支持使用React.html">
+            
+                
+                    <a href="../2/在项目中支持使用React.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        在项目中支持使用React
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="2/测试环境搭建.html">
+            
+                
+                    <a href="../2/测试环境搭建.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        测试环境搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="2/使用Karma测试.html">
+            
+                
+                    <a href="../2/使用Karma测试.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        使用Karma测试
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> Babel使用指南</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="3/Babel使用指南.html">
+            
+                
+                    <a href="../3/Babel使用指南.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="3/安装 Babel.html">
+            
+                
+                    <a href="../3/安装 Babel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        安装 Babel
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="3/配置 Babel.html">
+            
+                
+                    <a href="../3/配置 Babel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        配置 Babel
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="3/执行 Babel 生成的代码.html">
+            
+                
+                    <a href="../3/执行 Babel 生成的代码.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        执行 Babel 生成的代码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="3/配置 Babel（进阶）.html">
+            
+                
+                    <a href="../3/配置 Babel（进阶）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        配置 Babel（进阶）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="3/Babel 和其他工具集成.html">
+            
+                
+                    <a href="../3/Babel 和其他工具集成.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Babel 和其他工具集成
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> ES6 核心基础知识</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="4/introduction.html">
+            
+                
+                    <a href="../4/introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="4/tooling.html">
+            
+                
+                    <a href="../4/tooling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        tooling
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="4/let-and-const.html">
+            
+                
+                    <a href="../4/let-and-const.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        let-and-const
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="4/teplate-literals.html">
+            
+                
+                    <a href="../4/teplate-literals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        teplate-literals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="4/arrow-funtions.html">
+            
+                
+                    <a href="../4/arrow-funtions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        arrow-funtions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="4/assignment-destructuring.html">
+            
+                
+                    <a href="../4/assignment-destructuring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        assignment-destructuring
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="4/object-literals.html">
+            
+                
+                    <a href="../4/object-literals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        object-literals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.8" data-path="4/spread-oprator-and-rest-parameters.html">
+            
+                
+                    <a href="../4/spread-oprator-and-rest-parameters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        spread-oprator-and-rest-parameters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="4/classes.html">
+            
+                
+                    <a href="../4/classes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        classes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="4/modules.html">
+            
+                
+                    <a href="../4/modules.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                        modules
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="4/decorators.html">
+            
+                
+                    <a href="../4/decorators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.</b>
+                        
+                        decorators
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="4/generaters.html">
+            
+                
+                    <a href="../4/generaters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.</b>
+                        
+                        generaters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="4/promises.html">
+            
+                
+                    <a href="../4/promises.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.13.</b>
+                        
+                        promises
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="4/proxies.html">
+            
+                
+                    <a href="../4/proxies.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.14.</b>
+                        
+                        proxies
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="4/sets-maps-and-weaksets-weakmaps.html">
+            
+                
+                    <a href="../4/sets-maps-and-weaksets-weakmaps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.15.</b>
+                        
+                        sets-maps-and-weaksets-weakmaps
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="4/symbols.html">
+            
+                
+                    <a href="../4/symbols.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.16.</b>
+                        
+                        symbols
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="4/iterators.html">
+            
+                
+                    <a href="../4/iterators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.17.</b>
+                        
+                        iterators
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> 使用ES6开发属于你的前端类库</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" >
+            
+            <span><b>5.1.</b> 类库功能规划</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+            <span><b>5.2.</b> 核心功能架构搭建</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+            <span><b>5.3.</b> 完善基本功能</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+            <span><b>5.4.</b> 功能测试</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" >
+            
+            <span><b>5.5.</b> 持续集成</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" >
+            
+            <span><b>5.6.</b> 发布到npm</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> React核心基础详解</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="5/React第一讲课堂笔记（初识React）.html">
+            
+                
+                    <a href="../5/React第一讲课堂笔记（初识React）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        初识React
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="5/React第二讲课堂笔记（JSX语法）.html">
+            
+                
+                    <a href="../5/React第二讲课堂笔记（JSX语法）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        JSX语法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="5/React第三讲课堂笔记（数据流）.html">
+            
+                
+                    <a href="../5/React第三讲课堂笔记（数据流）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        数据流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="5/React第四讲课堂笔记（定义组件）.html">
+            
+                
+                    <a href="../5/React第四讲课堂笔记（定义组件）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        定义组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="5/React第五讲课堂笔记（DOM操作）.html">
+            
+                
+                    <a href="../5/React第五讲课堂笔记（DOM操作）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        DOM操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="5/React第六讲课堂笔记（事件）.html">
+            
+                
+                    <a href="../5/React第六讲课堂笔记（事件）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        DOM操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="5/React第七讲课堂笔记（组件嵌套）.html">
+            
+                
+                    <a href="../5/React第七讲课堂笔记（组件嵌套）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        组件嵌套
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="5/React第八讲课堂笔记（表单操作）.html">
+            
+                
+                    <a href="../5/React第八讲课堂笔记（表单操作）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        表单操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="5/React第九讲课堂笔记（mixin）.html">
+            
+                
+                    <a href="../5/React第九讲课堂笔记（mixin）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        mixin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="5/React课堂笔记第十讲（编码规范）.html">
+            
+                
+                    <a href="../5/React课堂笔记第十讲（编码规范）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        编码规范
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> 开发你的第一个React应用</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" >
+            
+            <span><b>7.1.</b> 使用React.Component开发组件并完成渲染</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" >
+            
+            <span><b>7.2.</b> this.props的使用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" >
+            
+            <span><b>7.3.</b> 开发组件并实现实现组件嵌套</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" >
+            
+            <span><b>7.4.</b> 讲解this.props.children 和location 的使用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" >
+            
+            <span><b>7.5.</b> react-router 介绍和使用（Router Route IndexRoute hashHistory）</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" >
+            
+            <span><b>7.6.</b> container 页面逻辑，使用neoui，调试功能</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" >
+            
+            <span><b>7.7.</b> life cycle events and conditional rendering</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" >
+            
+            <span><b>7.8.</b> axios, promises, and the github api</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> React-router路由实战</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="7/内容简介.html">
+            
+                
+                    <a href="../7/内容简介.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        内容简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="7/Router,hashHistory,Route.html">
+            
+                
+                    <a href="../7/Router,hashHistory,Route.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Router,hashHistory,Route
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="7/Link.html">
+            
+                
+                    <a href="../7/Link.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        Link.md
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="7/browserHistory.html">
+            
+                
+                    <a href="../7/browserHistory.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        browserHistory.md
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="7/activeStyle,activeClassName.html">
+            
+                
+                    <a href="../7/activeStyle,activeClassName.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        activeStyle,activeClassName
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="7/路由嵌套.html">
+            
+                
+                    <a href="../7/路由嵌套.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        路由嵌套
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="7/IndexRoute.html">
+            
+                
+                    <a href="../7/IndexRoute.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.7.</b>
+                        
+                        IndexRoute
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="7/路由变量.html">
+            
+                
+                    <a href="../7/路由变量.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.8.</b>
+                        
+                        路由变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="7/Route中components参数的高级用法.html">
+            
+                
+                    <a href="../7/Route中components参数的高级用法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.9.</b>
+                        
+                        Route中components参数的高级用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="7/使用query获取URL中的参数.html">
+            
+                
+                    <a href="../7/使用query获取URL中的参数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.10.</b>
+                        
+                        使用query获取URL中的参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="7/Redirect重定向.html">
+            
+                
+                    <a href="../7/Redirect重定向.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.11.</b>
+                        
+                        Redirect重定向
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="7/setRouteLeaveHook路由钩子函数.html">
+            
+                
+                    <a href="../7/setRouteLeaveHook路由钩子函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.12.</b>
+                        
+                        setRouteLeaveHook路由钩子函数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+            <span><b>9.</b> Redux从入门到实战</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="8/介绍.html">
+            
+                
+                    <a href="../8/介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        内容介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="8/快速上手.html">
+            
+                
+                    <a href="../8/快速上手.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        快速上手
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="8/Redux 的顶层 API 介绍.html">
+            
+                
+                    <a href="../8/Redux 的顶层 API 介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        Redux 的顶层 API 介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="8/理解 Redux 的核心概念.html">
+            
+                
+                    <a href="../8/理解 Redux 的核心概念.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        理解 Redux 的核心概念
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="8/React-redux的使用.html">
+            
+                
+                    <a href="../8/React-redux的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        React-redux的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="8/一步步开发一个 TODO 应用.html">
+            
+                
+                    <a href="../8/一步步开发一个 TODO 应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        一步步开发一个 TODO 应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="8/Redux超酷的开发工具Redux-Devtools.html">
+            
+                
+                    <a href="../8/Redux超酷的开发工具Redux-Devtools.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                        Redux超酷的开发工具Redux-Devtools
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="8/初步理解Redux的Middleware.html">
+            
+                
+                    <a href="../8/初步理解Redux的Middleware.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                        初步理解Redux的Middleware
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9" data-path="8/一起来写middleware.html">
+            
+                
+                    <a href="../8/一起来写middleware.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                        一起来写middleware
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.10" data-path="8/middleware的应用.html">
+            
+                
+                    <a href="../8/middleware的应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        middleware的综合应用实战
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+            <span><b>10.</b> Node.js知识详解</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="9/Node.js知识详解.html">
+            
+                
+                    <a href="../9/Node.js知识详解.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="9/Node.js入门知识.html">
+            
+                
+                    <a href="../9/Node.js入门知识.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        Node.js入门知识
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="9/Node.js基础知识.html">
+            
+                
+                    <a href="../9/Node.js基础知识.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        Node.js基础知识
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="9/Nodejs中的对象和核心API.html">
+            
+                
+                    <a href="../9/Nodejs中的对象和核心API.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        Nodejs中的对象和核心API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="9/Node.js开发实战.html">
+            
+                
+                    <a href="../9/Node.js开发实战.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Node.js开发实战
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 基于 React + Nodejs 的前后端同构应用开发</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="10/你需要准备什么.html">
+            
+                
+                    <a href="../10/你需要准备什么.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        你需要准备什么
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="10/应用功能分析.html">
+            
+                
+                    <a href="../10/应用功能分析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        应用功能分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="10/技术基础架构.html">
+            
+                
+                    <a href="../10/技术基础架构.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        技术基础架构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="10/开发服务端应用.html">
+            
+                
+                    <a href="../10/开发服务端应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        开发服务端应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="10/开发客户端应用.html">
+            
+                
+                    <a href="../10/开发客户端应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                        开发客户端应用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" >
+            
+            <span><b>12.</b> 更多</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="11/组件测试.html">
+            
+                
+                    <a href="../11/组件测试.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        组件测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="11/react组件编码规范.html">
+            
+                
+                    <a href="../11/react组件编码规范.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        react组件编码规范
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="11/JS函数式编程.html">
+            
+                
+                    <a href="../11/JS函数式编程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                        JS函数式编程
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >金牌课程 -- 打造未来的前端架构师</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="7default--rest--spread">7.Default + Rest + Spread</h2>
+<h3 id="default-&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x503C;">Default &#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x503C;</h3>
+<p>&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x5728;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E86;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x50CF;&#x4EE5;&#x524D;&#x90A3;&#x6837;&#x901A;&#x8FC7;&#x903B;&#x8F91;&#x6216;&#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x8FBE;&#x5230;&#x76EE;&#x7684;&#x4E86;&#x3002;</p>
+<pre><code>function sayHello(name){
+    //&#x4F20;&#x7EDF;&#x7684;&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;
+    var name=name||&apos;dude&apos;;
+    console.log(&apos;Hello &apos;+name);
+}
+//&#x8FD0;&#x7528;ES6&#x7684;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;
+function sayHello2(name=&apos;dude&apos;){
+    console.log(`Hello ${name}`);
+}
+sayHello();//&#x8F93;&#x51FA;&#xFF1A;Hello dude
+sayHello(&apos;zf&apos;);//&#x8F93;&#x51FA;&#xFF1A;Hello zf
+sayHello2();//&#x8F93;&#x51FA;&#xFF1A;Hello dude
+sayHello2(&apos;zf&apos;);//&#x8F93;&#x51FA;&#xFF1A;Hello zf
+</code></pre><h3 id="rest-&#x5269;&#x4F59;&#x53C2;&#x6570;">Rest &#x5269;&#x4F59;&#x53C2;&#x6570;</h3>
+<p>&#x4E0D;&#x5B9A;&#x53C2;&#x6570;&#x662F;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;&#x547D;&#x540D;&#x53C2;&#x6570;&#x540C;&#x65F6;&#x63A5;&#x6536;&#x4E0D;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x672A;&#x547D;&#x540D;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x53EA;&#x662F;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x7CD6;&#xFF0C;&#x5728;&#x4EE5;&#x524D;&#x7684;JavaScript&#x4EE3;&#x7801;&#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>arguments</code> &#x53D8;&#x91CF;&#x6765;&#x8FBE;&#x5230;&#x8FD9;&#x4E00;&#x76EE;&#x7684;&#x3002;</p>
+<p>&#x4E0D;&#x5B9A;&#x53C2;&#x6570;&#x7684;&#x683C;&#x5F0F;&#x662F;&#x4E09;&#x4E2A;&#x53E5;&#x70B9;&#x540E;&#x8DDF;&#x4EE3;&#x8868;&#x6240;&#x6709;&#x4E0D;&#x5B9A;&#x53C2;&#x6570;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x3002;&#x6BD4;&#x5982;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x2026;x&#x4EE3;&#x8868;&#x4E86;&#x6240;&#x6709;&#x4F20;&#x5165;add&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>// rest
+function restFunc(a, ...rest) {
+  console.log(a)
+  console.log(rest)
+}
+restFunc(1);
+restFunc(1, 2, 3, 4);
+</code></pre><p>&#x518D;&#x770B;&#x4E00;&#x4E2A;&#xFF1A;</p>
+<pre><code>//&#x5C06;&#x6240;&#x6709;&#x53C2;&#x6570;&#x76F8;&#x52A0;&#x7684;&#x51FD;&#x6570;
+function add(...x){
+    return x.reduce((m,n)=&gt;m+n);
+}
+//&#x4F20;&#x9012;&#x4EFB;&#x610F;&#x4E2A;&#x6570;&#x7684;&#x53C2;&#x6570;
+console.log(add(1,2,3));//&#x8F93;&#x51FA;&#xFF1A;6
+console.log(add(1,2,3,4,5));//&#x8F93;&#x51FA;&#xFF1A;15
+</code></pre><h3 id="spread--&#x6269;&#x5C55;&#x64CD;&#x4F5C;&#x7B26;">Spread  &#x6269;&#x5C55;&#x64CD;&#x4F5C;&#x7B26;</h3>
+<p>&#x6269;&#x5C55;&#x64CD;&#x4F5C;&#x7B26;&#x5219;&#x662F;&#x53E6;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x8BED;&#x6CD5;&#x7CD6;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x4F20;&#x9012;&#x6570;&#x7EC4;&#x6216;&#x8005;&#x7C7B;&#x6570;&#x7EC4;&#x76F4;&#x63A5;&#x505A;&#x4E3A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x800C;&#x4E0D;&#x7528;&#x901A;&#x8FC7;apply&#x3002;</p>
+<pre><code>var people=[&apos;zf&apos;,&apos;John&apos;,&apos;Sherlock&apos;];
+
+function sayHello(people1,people2,people3){
+    console.log(`Hello ${people1},${people2},${people3}`);
+}
+//&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4EE5;&#x62D3;&#x5C55;&#x53C2;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#xFF0C;&#x5B83;&#x80FD;&#x5F88;&#x597D;&#x5730;&#x6620;&#x5C04;&#x5230;&#x6BCF;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x53C2;&#x6570;
+sayHello(...people);//&#x8F93;&#x51FA;&#xFF1A;Hello zf,John,Sherlock
+
+//&#x800C;&#x5728;&#x4EE5;&#x524D;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F20;&#x9012;&#x6570;&#x7EC4;&#x5F53;&#x53C2;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x7684;apply&#x65B9;&#x6CD5;
+sayHello.apply(null,people);//&#x8F93;&#x51FA;&#xFF1A;Hello zf,John,Sherlock
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../4/object-literals.html" class="navigation navigation-prev " aria-label="Previous page: object-literals"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../4/classes.html" class="navigation navigation-next " aria-label="Next page: classes"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"github":{"url":"https://github.com/GuoYongfeng/course-book"},"sharing":{"weibo":true,"twitter":false,"facebook":false,"all":["facebook","google","twitter","weibo","instapaper"],"google":false,"instapaper":false,"vk":false},"sitemap":{"hostname":"http://guoyongfeng.github.io/idoc/"},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"family":"sans","size":2,"theme":"white"}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
