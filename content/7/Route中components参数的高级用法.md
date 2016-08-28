@@ -1,6 +1,4 @@
-
-
-## 8. Route中components参数的高级用法
+## Route中components参数的高级用法
 
 Route中components中接收的参数不仅仅只是实际的组件，还可以是对象，通过这样的用法，我们可以更灵活的控制组件的展示。
 

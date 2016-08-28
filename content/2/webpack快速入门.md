@@ -1,4 +1,4 @@
-# webpack快速入门
+# webpack快速上手
 
 ## webpack介绍
 
@@ -21,14 +21,14 @@ webpack对React有着与生俱来的良好支持，随着React的流行，webpac
 ### 初始化项目环境
 
 ```
-$ mkdir react_boilerplate
-$ cd react_boilerplate\
+$ mkdir webpack-dev-boilerplate
+$ cd webpack-dev-boilerplate\
 
 $ npm init -y
-Wrote to .\react_boilerplate\package.json:
+Wrote to .\webpack-dev-boilerplate\package.json:
 
 {
-  "name": "react_boilerplate",
+  "name": "webpack-dev-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -191,7 +191,7 @@ npm install html-webpack-plugin --save-dev
 ```
 $ npm run build
 
-> react_boilerplate@1.0.0 build D:\node\react_boilerplate
+> webpack-dev-boilerplate@1.0.0 build D:\node\webpack-dev-boilerplate
 > webpack
 
 Hash: cbf754a65493b4d791d7
@@ -244,7 +244,7 @@ npm i webpack-dev-server --save-dev
 ```
 $ npm run dev
 
-> react_boilerplate@1.0.0 dev D:\node\react_boilerplate
+> webpack-dev-boilerplate@1.0.0 dev D:\node\webpack-dev-boilerplate
 > webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist
 
 ......
@@ -317,7 +317,7 @@ require('./index.less');
 ```
 $ npm run build
 
-> react_boilerplate@1.0.0 build D:\node\react_boilerplate
+> webpack-dev-boilerplate@1.0.0 build D:\node\webpack-dev-boilerplate
 > webpack
 
 Hash: 0c25c4bacdc334db1e04

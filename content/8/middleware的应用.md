@@ -1,6 +1,4 @@
-
-
-## 7.使用middleware实现异步 action 和异步数据流
+## 使用middleware实现异步 action 和异步数据流
 
 redux的生态在持续的完善，其中就有不少优秀的 middleware 供开发者使用，同时大家也可以实现自己的middleware。
 
@@ -17,7 +15,7 @@ $ npm install --save-dev isomorphic-fetch redux-thunk redux-logger
 - `isomorphic-fetch`：用于ajax请求数据
 
 
-### 7.1 入口
+### 入口
 `index.js`
 ```
 import 'babel-polyfill'
@@ -33,7 +31,7 @@ render(
 
 ```
 
-### 7.2 容器型组件
+### 容器型组件
 
 `containers/Root.js`
 ```
@@ -168,7 +166,7 @@ export default connect(mapStateToProps)(App)
 ```
 
 
-### 7.3 展示型组件
+### 展示型组件
 
 `components/Picker.js`
 ```
@@ -237,7 +235,7 @@ Posts.propTypes = {
 ```
 
 
-### 7.4 Action & Action Creator
+### Action & Action Creator
 
 
 `actions/index.js`
@@ -313,7 +311,7 @@ export function fetchPostsIfNeeded(subreddit) {
 
 ```
 
-### 7.4 reducers
+### reducers
 
 `reducers/index.js`
 ```
@@ -381,7 +379,7 @@ export default rootReducer
 
 ```
 
-### 7.5 store
+### store
 
 `store/configureStore.js`
 ```

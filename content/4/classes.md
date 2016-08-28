@@ -1,5 +1,5 @@
 
-## 3.Class, extends, super 类的支持
+## Class, extends, super 类的支持
 
 回想之前，如果我们需要模拟一个js的类，一般会采用构造函数加原型的方式。
 ```

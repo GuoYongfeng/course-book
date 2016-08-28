@@ -1,6 +1,4 @@
-
-
-## 7.Default + Rest + Spread
+## Default + Rest + Spread
 
 ### Default 默认参数值
 

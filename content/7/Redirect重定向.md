@@ -1,5 +1,5 @@
 
-## 10. Redirect重定向
+## Redirect重定向
 
 ```
 import React, { Component } from 'react';

@@ -1,7 +1,7 @@
 
-## 5. 使用 React-redux 连接 react 和 redux
+## 使用 React-redux 连接 react 和 redux
 
-### 5.1 没有react-redux的写法
+### 没有react-redux的写法
 
 封装一个组件，将组件和Redux做基本的组合
 ```
@@ -53,7 +53,7 @@ PureRender()
 ```
 
 
-### 5.2 React-redux 提供的 connect 和 Provider
+### React-redux 提供的 connect 和 Provider
 
 `<Provider store>` 使组件层级中的 `connect()` 方法都能够获得 `Redux store`。正常情况下，你的根组件应该嵌套在 ``<Provider>` 中才能使用 `connect()` 方法。
 

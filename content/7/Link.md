@@ -1,5 +1,5 @@
 
-## 2. Link
+## Link
 
 Link是react-router提供的导航组件，可以直接使用进行路由切换
 

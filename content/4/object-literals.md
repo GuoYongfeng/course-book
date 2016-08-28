@@ -1,5 +1,5 @@
 
-## 4.Enhanced Object Literals 增强的对象字面量
+## Enhanced Object Literals 增强的对象字面量
 
 对象字面量被增强了，写法更加简洁与灵活，同时在定义对象的时候能够做的事情更多了。具体表现在：
 

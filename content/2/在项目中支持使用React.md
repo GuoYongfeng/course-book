@@ -11,7 +11,7 @@ npm install react react-dom --save
 这里我们使用的版本是15.0.1。
 ```
 $ npm install react react-dom --save
-react_boilerplate@1.0.0 D:\node\react_boilerplate
+webpack-dev-boilerplate@1.0.0 D:\node\webpack-dev-boilerplate
 +-- react@15.0.1
 | `-- fbjs@0.8.1
 |   +-- isomorphic-fetch@2.2.1
@@ -170,8 +170,6 @@ $ npm run dev
 
 ![source](http://7xsxyo.com1.z0.glb.clouddn.com/2016/04/29/FryFP8lTIrAosvDBBFT5h5nznmuH814.jpg)
 
-到目前为止的代码可以在[react_boilerplate _v3](https://github.com/jiji262/react_boilerplate/tree/master/_tutorial_/react_boilerplate_v3)中查看。
-
 ## 创建React组件
 
 我们将`app/index.js`修改一下，创建一个新的React组件。
@@ -197,6 +195,3 @@ ReactDOM.render(, document.getElementById('content'));
 我们在之前已经在webpack的配置中配置好了对React的支持，因此目前不需要做什么修改了。
 
 `npm run build`之后就可以在页面上看到“Hello React!”了。
-
-至此，我们基于ES6并使用webpack和Babel的React初始项目已经可以完美运行了。
-到目前为止的代码可以在[react_boilerplate _v4](https://github.com/jiji262/react_boilerplate/tree/master/_tutorial_/react_boilerplate_v1)中查看。

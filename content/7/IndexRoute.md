@@ -1,5 +1,5 @@
 
-## 6. IndexRoute
+## IndexRoute
 
 IndexRoute即处理页面初始进入时候的组件展示，等路由切换的时候，再根据其他路由规则进行组件的切换展示。
 

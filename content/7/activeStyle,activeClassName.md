@@ -1,5 +1,5 @@
 
-## 4. activeStyle,activeClassName
+## activeStyle,activeClassName
 
 当前路由被点击处于触发显示状态的时候，我们可以使用activeStyle来给路由设置一些颜色。
 

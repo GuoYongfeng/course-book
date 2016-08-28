@@ -7,7 +7,7 @@
   - [Git和Github快速入门指南](./1/Git和Github快速入门指南.md)
   - [Git的高级使用指导](./1/Git的高级使用指导.md)
   - [掌握基本shell命令](./1/掌握基本shell命令.md)
-- [手把手教你使用webpack搭建完整工作流]()
+- [使用webpack搭建完整工作流]()
   - [webpack快速入门](./2/webpack快速入门.md)
   - [webpack支持ES6](./2/webpack支持ES6.md)
   - [在项目中支持使用React](./2/在项目中支持使用React.md)
@@ -57,14 +57,18 @@
   - [mixin](./5/React第九讲课堂笔记（mixin）.md)
   - [编码规范](./5/React课堂笔记第十讲（编码规范）.md)
 - [开发你的第一个React应用]()
-  - 使用React.Component开发组件并完成渲染
-  - this.props的使用
-  - 开发组件并实现实现组件嵌套
-  - 讲解this.props.children 和location 的使用
-  - react-router 介绍和使用（Router Route IndexRoute hashHistory）
-  - container 页面逻辑，使用neoui，调试功能
-  - life cycle events and conditional rendering
-  - axios, promises, and the github api
+  - [介绍](./6/介绍 INTRODUCTION.md)
+  - [快速开始](./6/快速开始.md)
+  - [使用react-router跑通基本路由](./6/使用react-router跑通基本路由.md)
+  - [新增头部搜索组件](./6/新增头部搜索组件.md)
+  - [创建展示用户信息的Profile组件](./6/创建展示用户信息的Profile组件.md)
+  - [创建组件UserProfile、UserRepos、Notes](./6/创建组件UserProfile、UserRepos、Notes.md)
+  - [使用state和props传递数据](./6/使用state和props传递数据.md)
+  - [接入真实的数据](./6/接入真实的数据.md)
+  - [评论列表组件NoteList](./6/评论列表组件NoteList.md)
+  - [为组件添加PropTypes接口约束](./6/为组件添加PropTypes接口约束.md)
+  - [使用axios请求github API的数据](./6/使用axios请求github API的数据.md)
+  - [将数据传入组件进行展示](./6/将数据传入组件进行展示.md)                 
 - [React-router路由实战]()
   - [内容简介](./7/内容简介.md)
   - [Router,hashHistory,Route](./7/Router,hashHistory,Route.md)

@@ -1,7 +1,7 @@
 
-## 6. 一步步开发一个 TODO 应用
+## 一步步开发一个 TODO 应用
 
-### 6.1 入口文件
+### 入口文件
 
 `index.js`
 
@@ -24,7 +24,7 @@ render(
 )
 ```
 
-### 6.2 Action 创建函数和常量
+### Action 创建函数和常量
 
 `actions.js`
 
@@ -64,7 +64,7 @@ export function setVisibilityFilter(filter) {
 }
 ```
 
-### 6.3 Reducers
+### Reducers
 
 `reducers.js`
 
@@ -113,7 +113,7 @@ const todoApp = combineReducers({
 export default todoApp
 ```
 
-### 6.4 容器组件
+### 容器组件
 
 `containers/App.js`
 
@@ -186,7 +186,7 @@ function select(state) {
 export default connect(select)(App)
 ```
 
-### 6.5 展示组件
+### 展示组件
 
 `components/AddTodo.js`
 

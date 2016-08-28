@@ -1,5 +1,5 @@
 
-## 1. Router,hashHistory,Route
+## Router,hashHistory,Route
 首先下载react-router
 ```
 $ npm install react-router --save

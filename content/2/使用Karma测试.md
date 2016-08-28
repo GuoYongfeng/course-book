@@ -58,7 +58,7 @@ Press tab to list possible options.
 > yes
 
 
-Config file generated at "D:\node\react_boilerplate\karma.conf.js".
+Config file generated at "D:\node\webpack-dev-boilerplate\karma.conf.js".
 ```
 
 然后我们就可以使用`karma start`命令来运行我们的测试用例了。不过现在直接运行可能还有一些问题，暂时先不管。
@@ -157,5 +157,3 @@ npm install watch --save-dev
 这样我们就可以使用`npm run test`来运行测试，`npm run test:watch`来监听文件改变并自动运行测试了：
 
 ![karma](http://7xsxyo.com1.z0.glb.clouddn.com/2016/04/29/Fo8y7n8p4qhOi9Bq0gf3pXE-xrJQ87.jpg)
-
-到目前为止我们自己的react boilerplate已经创建完毕了！代码可以在[react_boilerplate _v6](https://github.com/jiji262/react_boilerplate/tree/master/_tutorial_/react_boilerplate_v6)中查看。

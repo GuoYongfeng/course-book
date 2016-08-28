@@ -1,5 +1,5 @@
 
-## 5.剖析applyMiddleware.js
+## 剖析applyMiddleware.js
 
 现在咱们已经知道Redux中间件是个啥，并且也掌握了足够的函数式编程知识，那就让我们再次尝试阅读`applyMiddleware.js`的源码来探个究竟吧。这次感觉比较好理解了吧：
 

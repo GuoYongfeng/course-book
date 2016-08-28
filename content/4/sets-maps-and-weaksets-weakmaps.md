@@ -1,5 +1,5 @@
 
-## 8.Map，Set 和 WeakMap，WeakSet
+## Map，Set 和 WeakMap，WeakSet
 
 这些是新加的集合类型，提供了更加方便的获取属性值的方法，不用像以前一样用`hasOwnProperty`来检查某个属性是属于原型链上的呢还是当前对象的。同时，在进行属性值添加与获取时有专门的`get，set `方法。
 

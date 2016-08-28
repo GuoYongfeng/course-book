@@ -1,5 +1,5 @@
 
-## 11.Promises
+## Promises
 
 ES6的Promise是一个非常重要的特性，它是处理异步操作的一种模式。有了它，JavaScript异步嵌套的问题算是得到了比较好的解决。同时，Promise也是ES7中async/await的基础。
 

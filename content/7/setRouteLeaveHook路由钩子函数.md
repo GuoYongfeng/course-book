@@ -1,5 +1,5 @@
 
-## 11. setRouteLeaveHook路由钩子函数：处理路由切换时的操作
+## setRouteLeaveHook路由钩子函数：处理路由切换时的操作
 
 ```
 import React, { Component, PropTypes } from 'react';

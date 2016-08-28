@@ -1,7 +1,7 @@
 
-## 4. Redux 的顶层 API 介绍
+## Redux 的顶层 API 介绍
 
-### 4.1 createStore
+### createStore
 
 调用方式：createStore(reducer, [initialState])
 
@@ -65,7 +65,7 @@ document.addEventListener('click', function( e ){
 
 ```
 
-### 4.2 combineReducers
+### combineReducers
 
 调用方式：combineReducers(reducers)
 
@@ -131,7 +131,7 @@ console.log('改变后的 state :', store.getState())
 
 ```
 
-### 4.3 applyMiddleware
+### applyMiddleware
 
 调用方式：applyMiddleware(...middlewares)
 
@@ -139,7 +139,7 @@ console.log('改变后的 state :', store.getState())
 
 具体用法我们高级部分详细说明。
 
-### 4.4 bindActionCreators
+### bindActionCreators
 
 调用方式：bindActionCreators(actionCreators, dispatch)
 
@@ -147,7 +147,7 @@ console.log('改变后的 state :', store.getState())
 
 具体用法我们高级部分详细说明。
 
-### 4.5 compose
+### compose
 
 调用方式：compose(...functions)
 

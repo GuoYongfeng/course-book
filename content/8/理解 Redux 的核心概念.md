@@ -1,7 +1,7 @@
 
-## 3. 理解 Redux 的核心概念
+## 理解 Redux 的核心概念
 
-### 3.1 Action & Action Creator
+### Action & Action Creator
 
 在 Redux 中，改变 State 只能通过 action，它是 store 数据的唯一来源。一般来说你会通过 store.dispatch() 将 action 传到 store。。并且，每一个 action 都必须是 Javascript 的简单对象，例如：
 
@@ -46,7 +46,7 @@ function addTodo(text) {
 ```
 Action Creator 看起来很简单，但是如果结合上 Middleware 就可以变得非常灵活，后面会专门讲 Middleware 。
 
-### 3.2 Reducer
+### Reducer
 
 我们先来看一下 Javascript 中 [Array.prototype.reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce_clone) 的用法：
 
@@ -74,7 +74,7 @@ const counter = (state = 0, action) => {
 }
 ```
 
-### 3.3 Store
+### Store
 
 Store 就是用来维持应用所有的 [state 树]() 的一个对象。
 改变 store 内 state 的惟一途径是对它 dispatch 一个 [action]()。
@@ -85,14 +85,14 @@ Store 是一个具有以下四个方法的对象：
 - `subscribe(listener)`
 - `replaceReducer(nextReducer)`
 
-#### 3.3.1 getState()
+#### getState()
 
 返回应用当前的 state 树。
 它与 store 的最后一个 reducer 返回值相同。
 
 返回值：应用当前的 state 树。
 
-#### 3.3.2 dispatch(action)
+#### dispatch(action)
 
 dispatch 分发 action。这是触发 state 变化的惟一途径。
 
@@ -132,7 +132,7 @@ store.dispatch(addTodo('Read about the middleware'))
 
 ```
 
-#### 3.3.3 subscribe(listener)
+#### subscribe(listener)
 
 添加一个变化监听器。每当 dispatch action 的时候就会执行，state 树中的一部分可能已经变化。这是一个底层 API。多数情况下，你不会直接使用它，会使用一些 React（或其它库）的绑定。
 

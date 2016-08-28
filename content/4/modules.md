@@ -1,5 +1,5 @@
 
-## 13.Modules 模块
+## Modules 
 
 在ES6标准中，JavaScript原生支持module了。这种将JS代码分割成不同功能的小块进行模块化的概念是在一些三方规范中流行起来的，比如CommonJS和AMD模式。
 

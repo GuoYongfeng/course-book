@@ -105,16 +105,16 @@ npm install babel-loader babel-core babel-preset-es2015 babel-preset-react --sav
 ```
 $ npm run build
 
-> react_boilerplate@1.0.0 build D:\node\react_boilerplate
+> webpack-dev-boilerplate@1.0.0 build D:\node\webpack-dev-boilerplate
 > webpack
 
-D:\node\react_boilerplate\node_modules\webpack-core\lib\LoadersList.js:54
+D:\node\webpack-dev-boilerplate\node_modules\webpack-core\lib\LoadersList.js:54
                 if(!element.loader || element.loader.indexOf("!") >= 0) throw new Error("Cannot define 'query' and multiple loaders in loaders list");
                                                                         ^
 
 Error: Cannot define 'query' and multiple loaders in loaders list
-    at getLoadersFromObject (D:\node\react_boilerplate\node_modules\webpack-core\lib\LoadersList.js:54:65)
-    at LoadersList. (D:\node\react_boilerplate\node_modules\webpack-core\lib\LoadersList.js:78:12)
+    at getLoadersFromObject (D:\node\webpack-dev-boilerplate\node_modules\webpack-core\lib\LoadersList.js:54:65)
+    at LoadersList. (D:\node\webpack-dev-boilerplate\node_modules\webpack-core\lib\LoadersList.js:78:12)
     at Array.map (native)
     at LoadersList.match
     ...
@@ -128,5 +128,3 @@ var babelPresets = {presets: ['react', 'es2015']};
 loaders: ['other-loader', 'babel-loader?'+JSON.stringify(babelPresets)]
 ......
 ```
-
-到目前为止的代码可以在[react_boilerplate _v2](https://github.com/jiji262/react_boilerplate/tree/master/_tutorial_/react_boilerplate_v2)中查看。
