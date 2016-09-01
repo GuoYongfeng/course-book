@@ -3,8 +3,22 @@
   "version": "1.0.0",
   "description": "full stack course",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "async": "^1.5.0",
+    "fs-extra": "^0.26.0",
+    "gh-pages": "^0.4.0",
+    "gitbook-cli": "^1.0.0"
+  },
+  "devDependencies": {
+    "ebook-convert": "^1.0.0",
+    "gitbook-plugin-ad": "0.0.4",
+    "gitbook-plugin-baidu": "^0.1.0",
+    "gitbook-plugin-disqus": "^0.1.0",
+    "gitbook-plugin-editlink": "^1.0.2",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-prism": "^1.0.0",
+    "gitbook-plugin-sitemap": "^1.2.0"
+  },
   "scripts": {
     "serve": "gitbook serve ./content ./gh-pages",
     "build": "gitbook build ./content ./gh-pages",
@@ -36,20 +50,5 @@
   "bugs": {
     "url": "https://github.com/GuoYongfeng/course-book/issues"
   },
-  "homepage": "https://github.com/GuoYongfeng/course-book#readme",
-  "dependencies": {
-    "async": "^1.5.0",
-    "fs-extra": "^0.26.0",
-    "gh-pages": "^0.4.0",
-    "gitbook-cli": "^1.0.0"
-  },
-  "devDependencies": {
-    "ebook-convert": "^1.0.0",
-    "gitbook-plugin-ad": "0.0.4",
-    "gitbook-plugin-baidu": "^0.1.0",
-    "gitbook-plugin-editlink": "^1.0.2",
-    "gitbook-plugin-github": "^2.0.0",
-    "gitbook-plugin-prism": "^1.0.0",
-    "gitbook-plugin-sitemap": "^1.2.0"
-  }
+  "homepage": "https://github.com/GuoYongfeng/course-book#readme"
 }

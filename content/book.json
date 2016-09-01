@@ -4,11 +4,15 @@
   "language": "zh-hans",
   "gitbook": "2.x.x",
   "plugins": [
-    "github"
+    "github",
+    "disqus"
   ],
   "pluginsConfig": {
     "github": {
-      "url": "https://github.com/GuoYongfeng/course-book"
+      "url": "https://github.com/GuoYongfeng"
+    },
+    "disqus": {
+        "shortName": "gitbookuse"
     },
     "sharing": {
       "weibo": true,
